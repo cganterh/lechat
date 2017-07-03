@@ -38,7 +38,11 @@ def parse_message(bot, update):
         similar_messages = get_close_matches(cur_message, previous_messages)
 
     except:
-        getLogger().exception()
+        getLogger().exception(
+            'This is the error we want to debug.\n\n'
+            'cur_message = {}\n\n'
+            'previous_messages={}'.format(cur_message, previous_messages)
+        )
 
     if len(similar_messages) > 0 and random() > 0.5:
         choosen_message = choice(similar_messages)
