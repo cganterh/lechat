@@ -12,7 +12,7 @@ rooms = {}
 
 def parse_message(bot, update):
     """Parse a message and maybe respond to it."""
-    cur_message = update.message.text
+    cur_message = update.message.text  # FIXME: cur_message can be None, this produces the error in the try-catch block
     chat_id = update.message.chat_id
     user = update.message.from_user.id
 
