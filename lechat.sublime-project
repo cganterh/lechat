@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".coverage"
+			],
+			"folder_exclude_patterns":
+			[
+				"__pycache__",
+				"build",
+				"dist",
+				"lechat.egg-info"
+			],
+			"path": "."
+		}
+	]
+}
